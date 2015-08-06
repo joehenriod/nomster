@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'bootstrap-sass', '~> 3.3.5'
+gem 'bootstrap-sass', '3.3.4.1'
+
+gem 'sprockets', '<= 2.11.0'
 
 gem "will_paginate", "~> 3.0.4" 
 
@@ -13,7 +15,7 @@ gem 'rails', '4.0.1'
 gem 'pg'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
