@@ -8,6 +8,8 @@
 
     </style>
 
+    <%= image_tag(@place.photo_url) if @place.photo? %>
+
     <% if @place.latitude.present? && @place.longitude.present? %>
 
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
