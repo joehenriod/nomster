@@ -1,5 +1,5 @@
 class NotificationMailer < ActionMailer::Base
-  default from: "info@lasvegastattoo.reviews"
+  default from: "checkoutmycattattoo@gmail.com"
 
   def comment_added
   	mail(to: "joe@ticketcake.com",
