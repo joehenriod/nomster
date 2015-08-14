@@ -32,7 +32,6 @@
 
 <div class="clear"></div>
 <h2 class="text-center">My Places</h2>
-<h2 class="text-center"><%= link_to comment.space.name, space_path(comment.space) %></h2>
 <% @user.places.each do |place| %>
   <div class="booyah-box col-xs-10 col-xs-offset-1">
     <h1><%= link_to place.name, place_path(place) %></h1><br />
