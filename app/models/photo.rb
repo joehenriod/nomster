@@ -3,7 +3,7 @@ class Photo < ActiveRecord::Base
 
 	validates :picture, :presence => true
 
-	mount_uploader :picture, PictureUploader
+	mount_uploader :picture, PhotoUploader
 end
 
 
