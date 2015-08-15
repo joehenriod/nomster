@@ -1,9 +1,16 @@
 <div class="booyah-box col-xs-10 col-xs-offset-1">
-  <h1>Enter Your Place Details</h1>
+  <h1>Add A New Tattoo Parlour</h1>
+</br>
+</br>
+
   <%= simple_form_for @place do |f| %>
     <%= f.input :name %>
     <%= f.input :address %>
     <%= f.input :description %>
+
+   <b>:Do you have an image of the the shop or work that was done there?<b>
+</br>
+</br>
     <%= f.file_field :photo %>
     <br />
     <%= f.submit 'Create' %>
