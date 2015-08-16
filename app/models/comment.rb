@@ -11,6 +11,11 @@ class Comment < ActiveRecord::Base
 		'five stars'  => '5_stars'
 	}
 
+	RECOMMENDS = {
+		'Yes'    => 'Yes',
+		'No'   => 'No'
+	}
+
 	def humanized_rating
 		RATINGS.invert[self.rating]
 	end
