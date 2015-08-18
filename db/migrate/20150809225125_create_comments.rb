@@ -4,7 +4,7 @@ class CreateComments < ActiveRecord::Migration
 
       t.text :message
       t.string :rating
-      t.string :recommend
+      t.boolean :recommend
 
       t.integer :user_id
       t.integer :place_id

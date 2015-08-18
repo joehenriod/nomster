@@ -12,9 +12,11 @@ class Comment < ActiveRecord::Base
 	}
 
 	RECOMMENDS = {
-		'Yes'    => 'Yes',
-		'No'   => 'No'
+		'Yes'  => true,
+		'No'   => false
 	}
+
+	mount_uploader :photo, PhotoUploader
 
 	def humanized_rating
 		RATINGS.invert[self.rating]
