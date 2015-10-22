@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem "factory_girl_rails", "~> 4.0"
+
 gem 'bootstrap-sass', '3.3.5.1'
 
 gem 'sprockets', '2.11.0'
