@@ -5,10 +5,10 @@ class CommentTest < ActiveSupport::TestCase
   #   assert true
   # end
 
-  test "comment humanized" do
-    quote = Comment.new(:rating => '1_star').humanized_rating 
-    get :show, :id => quote.id
-    assert_response :success
+	test "comment humanized" do
+	    comment_rating = Comment.new(:rating => '1_star').humanized_rating 
+	    assert_equal "one star", comment_rating
+	end
 
     
 end
